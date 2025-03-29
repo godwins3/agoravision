@@ -4,7 +4,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 router = APIRouter()
 
 # MongoDB Connection
-MONGO_URL = "mongodb://localhost:27017"
+MONGO_URL = "mongodb+srv://code_god:1MHwEGptmYQF1Grh@aoristai.1ofe1s4.mongodb.net/?retryWrites=true&w=majority&appName=AoristAI"
 client = AsyncIOMotorClient(MONGO_URL)
 
 @router.get("/health/mongodb", tags=["health"])
