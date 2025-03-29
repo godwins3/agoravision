@@ -34,3 +34,7 @@ app.add_middleware(
 # app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(stream.router, prefix="/api/v1", tags=["insights"])
 app.include_router(health.router, tags=["health"])
+
+app.get("/")
+async def root():
+    return {"message": "Welcome to the Agora Vision Insights API!"}
